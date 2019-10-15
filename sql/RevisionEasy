@@ -1,0 +1,51 @@
+-- The MOD function
+SELECT DISTINCT CITY FROM STATION WHERE MOD(ID,2)=0;
+
+https://www.hackerrank.com/challenges/weather-observation-station-5/problem
+If you need the maximum length and minimun length of the city with the length. Use rownum: 
+select * from (select city, min(length(city)) minl from station group by city order by minl, city) where rownum = 1;
+select * from (select city, max(length(city)) maxl from station group by city order by maxl desc, city) where rownum = 1;
+
+https://www.hackerrank.com/challenges/weather-observation-station-6/problem
+If you need to find starting names with vowels, use or inside where
+SELECT DISTINCT CITY FROM STATION WHERE (
+    UPPER(CITY) LIKE 'A%' OR
+    UPPER(CITY) LIKE 'E%' OR
+    UPPER(CITY) LIKE 'I%' OR
+    UPPER(CITY) LIKE 'O%' OR
+    UPPER(CITY) LIKE 'U%');
+   
+   
+https://www.hackerrank.com/challenges/weather-observation-station-8/problem
+Just use the AND In the where clause
+
+https://www.hackerrank.com/challenges/more-than-75-marks/problem
+Use of Substring
+
+https://www.hackerrank.com/challenges/what-type-of-triangle/problem
+Case Statement
+
+https://www.hackerrank.com/challenges/the-blunder/problem
+Ceil and blunder case
+
+https://www.hackerrank.com/challenges/average-population-of-each-continent/problem
+Floor
+
+https://www.hackerrank.com/challenges/earnings-of-employees/problem
+Max in where clause and good test on structured data
+
+https://www.hackerrank.com/challenges/the-pads/problem
+Substrings and concat
+
+https://www.hackerrank.com/challenges/occupations/problem
+Rank() and OVER()
+
+hackerrank.com/challenges/binary-search-tree-1/submissions/code/96497479
+Case and EXISTS()
+
+
+Give up: 
+https://www.hackerrank.com/challenges/draw-the-triangle-1/submissions/code/96309849
+https://www.hackerrank.com/challenges/draw-the-triangle-2/submissions
+Draw the Triange some hard code dual and shiz
+
